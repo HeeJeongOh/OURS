@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-List<StatefulWidget> Screens = [MainScreen(), CalendarScreen(), BucketScreen()];
+List<StatefulWidget> Screens = [CalendarScreen(), MainScreen(), BucketScreen()];
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -34,7 +34,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    PageController controller = PageController();
+    PageController controller = PageController(initialPage: 1);
     return Scaffold(
       body: Container(
         child: PageView.builder(

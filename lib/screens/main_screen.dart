@@ -15,6 +15,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(),
         body: Align(
             alignment: Alignment.center,
             child: Container(
@@ -51,7 +52,7 @@ class _MainScreenState extends State<MainScreen> {
                       height: 15,
                     ),
                     Container(
-                        height: MediaQuery.of(context).size.height * 0.75,
+                        height: MediaQuery.of(context).size.height * 0.7,
                         padding: EdgeInsets.all(20),
                         decoration: BoxDecoration(
                             border: Border.all(
@@ -63,7 +64,7 @@ class _MainScreenState extends State<MainScreen> {
                           children: [
                             Container(
                                 height:
-                                    MediaQuery.of(context).size.height * 0.4,
+                                    MediaQuery.of(context).size.height * 0.35,
                                 width: MediaQuery.of(context).size.width * 0.8,
                                 child: ClipRRect(
                                   borderRadius:
