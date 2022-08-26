@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: AnimatedSmoothIndicator(
                     activeIndex: idx,
                     count: Screens.length,
-                    effect: const ScrollingDotsEffect(
+                    effect: const WormEffect(
                       dotHeight: 10,
                       dotWidth: 10,
                       dotColor: Colors.grey,
